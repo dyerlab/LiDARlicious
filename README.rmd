@@ -1,0 +1,19 @@
+# LiDARlicious
+
+
+This is a *way* **cool** `package` 
+
+http://dyerlab.bio.vcu.edu or [here](http://dyerlab.bio.vcu.edu)
+
+1. this first
+2. second
+
+
+  * As a bullet  
+      * As an indent  
+  * Both work 
+
+
+An image ![Jameson](http://rampages.us/dyerlab/wp-content/uploads/sites/4831/2015/01/Hinkle-e1421078975142.png)
+
+
