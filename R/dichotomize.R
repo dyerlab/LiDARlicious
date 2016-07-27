@@ -20,6 +20,13 @@
 dichotomize <- function( x, hi.val=1.0, low.val=0.0 ) {
   if( !is( x, "RasterLayer"))
     stop("This function needs to have (at least) a raster passed to it.")
+  
+  if( length(hi.val)> 1 || length(low.val) > 1) {
+    hi.val <- hi.val[1]
+    low.val <- low.val[1]
+    warning("Presently, this function only handles single raster layers, see next version for ... dummy")
+  }
+  
   ret <- x
   y <- values(ret)
   y[ !is.na(y) ] <- hi.val

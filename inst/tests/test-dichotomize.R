@@ -19,6 +19,9 @@ library(raster)
   expect_that( values(d)[1], is_equivalent_to(1))
   expect_that( values(d)[4], is_equivalent_to(0))
   
+  expect_that( dichotomize(r, c(1,2), c(1,2) ), gives_warning() )
+  
+  
   d <- dichotomize(r, low.val=-1, hi.val=27)
   expect_that( d[1], is_equivalent_to(27) )
   expect_that( d[4], is_equivalent_to(-1))
